@@ -258,7 +258,10 @@
         height: 100%;
         padding-top: 100px;
     }
-
+     .backBg{
+        display: flex;
+        justify-content: center;
+     }
     .aboutSec {
         background-image: url("../images/1x/bannerBg.png");
         background-size: cover;
@@ -289,6 +292,9 @@
 
     .rightDiv {
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .rightDivText {
@@ -539,7 +545,6 @@
         position: relative;
         right: -180px;
     }
-
     .lineDiv {
         position: absolute;
         top: 0px;
@@ -612,6 +617,7 @@
         padding-bottom: 4rem;
 
     }
+
     .gallerSec h3 {
         color: #000;
         font-family: "Arizonia-Regular";
@@ -619,24 +625,25 @@
         padding-top: 4rem;
         font-size: 4rem;
         padding-bottom: 4rem;
-      }
-      
-      .gallerSec h1 {
+    }
+
+    .gallerSec h1 {
         margin-top: 150px;
         text-align: center;
-      }
-      .gallerSec section {
+    }
+
+    .gallerSec section {
         column-width: 400px;
         column-gap: 5px;
         padding: 5px;
-      }
-      
-      .gallerSec section img {
+    }
+
+    .gallerSec section img {
         width: 100%;
         cursor: pointer;
-      }
-      
-      .gallerSec .lightbox {
+    }
+
+    .gallerSec .lightbox {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -645,9 +652,9 @@
         z-index: 2;
         background: #7f8c8d;
         perspective: 1000;
-      }
-      
-      .gallerSec .filter {
+    }
+
+    .gallerSec .filter {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -655,9 +662,9 @@
         opacity: 0.5;
         background-position: center;
         background-size: cover;
-      }
-      
-      .gallerSec .lightbox img {
+    }
+
+    .gallerSec .lightbox img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -666,13 +673,13 @@
         max-width: calc(95vw - 100px);
         transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
         transform-style: preserve-3d;
-      }
-      
-      /*.lightbox:hover img{
+    }
+
+    /*.lightbox:hover img{
           transform: translate(-50%, -50%) rotateY(180deg);
         }*/
-      
-      [class^="arrow"] {
+
+    [class^="arrow"] {
         height: 200px;
         width: 50px;
         background: rgba(0, 0, 0, 0.4);
@@ -680,9 +687,9 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
-      }
-      
-      [class^="arrow"]:after {
+    }
+
+    [class^="arrow"]:after {
         content: "";
         position: absolute;
         top: 50%;
@@ -690,27 +697,27 @@
         transform: translate(-50%, -50%) rotate(-45deg);
         width: 15px;
         height: 15px;
-      }
-      
-      .gallerSec .arrowr {
+    }
+
+    .gallerSec .arrowr {
         right: 0;
-      }
-      
-      .gallerSec .arrowr:after {
+    }
+
+    .gallerSec .arrowr:after {
         border-right: 1px solid white;
         border-bottom: 1px solid white;
-      }
-      
-      .gallerSec .arrowl {
+    }
+
+    .gallerSec .arrowl {
         left: 0;
-      }
-      
-      .gallerSec .arrowl:after {
+    }
+
+    .gallerSec .arrowl:after {
         border-left: 1px solid white;
         border-top: 1px solid white;
-      }
-      
-      .gallerSec .close {
+    }
+
+    .gallerSec .close {
         position: absolute;
         right: 0;
         width: 50px;
@@ -718,10 +725,10 @@
         background: rgba(0, 0, 0, 0.4);
         margin: 20px;
         cursor: pointer;
-      }
-      
-      .gallerSec .close:after,
-      .gallerSec .close:before {
+    }
+
+    .gallerSec .close:after,
+    .gallerSec .close:before {
         content: "";
         position: absolute;
         top: 50%;
@@ -729,29 +736,31 @@
         width: 1px;
         height: 100%;
         background: #e74c3c;
-      }
-      
-      .gallerSec .close:after {
+    }
+
+    .gallerSec .close:after {
         transform: translate(-50%, -50%) rotate(-45deg);
-      }
-      
-      .gallerSec .close:before {
+    }
+
+    .gallerSec .close:before {
         transform: translate(-50%, -50%) rotate(45deg);
-      }
-      
-      .gallerSec .title {
+    }
+
+    .gallerSec .title {
         font-size: 20px;
         color: #000;
         z-index: 1000;
         position: absolute;
         top: 0;
         left: 0;
-      }
+    }
+
     /*  */
     /*footer css */
-    #footer{
-        background-color:#fff;
+    #footer {
+        background-color: #fff;
     }
+
     .footer {
         background-color: #FFDCEC;
     }
@@ -902,6 +911,7 @@
     .textAboutSec p {
         color: #666666;
         font-family: 'Poppins-Light';
+        width: 90%;
     }
 
     .aboutImg {
@@ -996,15 +1006,18 @@
     .getInTouch {
         width: 540px;
         height: 650px;
+        left: 0px;
+        position: relative;
 
     }
 
     .getInTouchImg {
-        position: absolute;
+        /* position: absolute; */
         width: 500px;
         height: 650px;
         left: 0px;
         border: 8px solid #D5417F;
+        position: absolute;
     }
 
     .getInTouchImg img {
@@ -1148,7 +1161,8 @@
         font-size: 15px;
     }
 
-    .photoSer button, .banner button {
+    .photoSer button,
+    .banner button {
         background-color: #D5417F;
         color: #fff;
         font-family: 'Poppins-Light';
@@ -1157,7 +1171,158 @@
         text-decoration: none;
     }
 
-    .photoSer button a,.banner button a {
+    .photoSer button a,
+    .banner button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    .capturingSec {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .capturingSec::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/capHome2.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .capturingSec::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #000000ab;
+        /* background-image: url("../images/1x/overlay.png"); */
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .pinkCurveCap {
+        height: 450px;
+        width: 60%;
+        /* background-color: #000; */
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .pinkCurveCapdivimg {
+        height: 450px;
+        width: 800px;
+    }
+
+    .pinkCurveCapdivimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .galleryHome2 {
+        background-color: #1A1A1A;
+        padding-bottom: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .galleryHome2 h3 {
+        color: #D5417F;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+
+    }
+
+    .capturingSec h4 {
+        color: #fff;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3rem;
+
+    }
+
+    .capturingSec hr {
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+    }
+
+    .capturingSec button {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    .capturingSec button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    #row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .galleryHome2 button {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+        margin-left: 1rem;
+    }
+
+    .galleryHome2 button a {
         text-decoration: none;
         background-color: #D5417F;
         color: #fff;
@@ -1289,11 +1454,12 @@
 
     /*  */
     /* Photo Services Css*/
-    .photoSer{
+    .photoSer {
         background-color: #1A1A1A;
         padding-bottom: 5rem;
     }
-    .photoSer h3{
+
+    .photoSer h3 {
         color: #D5417F;
         font-family: 'Arizonia-Regular';
         font-size: 4rem;
@@ -1301,34 +1467,40 @@
         padding-top: 3rem;
         padding-bottom: 2rem;
     }
-    .photoDiv{
+
+    .photoDiv {
         width: 400px;
         height: 500px;
         /* background-color: #506ED8; */
         margin: auto;
     }
-    .photoDivImg{
+
+    .photoDivImg {
         width: 400px;
         height: 500px;
     }
-    .photoDivImg img{
+
+    .photoDivImg img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .photoSer h4{
+
+    .photoSer h4 {
         color: #fff;
         font-family: 'Poppins-Bold';
         padding-top: 10px;
         font-size: 20px;
     }
-    .photoSer p{
+
+    .photoSer p {
         color: #E5E5E5;
         font-family: 'Poppins-Light';
         padding-top: 10px;
         font-size: 12px;
         padding: 15px;
     }
+
     /*  */
     /* About2 css */
     .aboutBanner1 {
@@ -1368,27 +1540,32 @@
         background-repeat: no-repeat;
         z-index: 1;
     }
+
     .banner1 h1 {
         color: #fff;
         text-align: center;
         font-family: 'Arizonia-Regular';
         font-size: 3.5rem;
     }
-    .textSec{
+
+    .textSec {
         background-color: #1A1A1A;
         padding-bottom: 8rem;
     }
-    .textSec p{
+
+    .textSec p {
         color: #E5E5E5;
         font-family: 'Poppins-Light';
         font-size: 15px;
     }
-    .textSecbtm{
-        position:absolute;
+
+    .textSecbtm {
+        position: absolute;
         width: 100%;
         height: 100px;
     }
-    .textSecbtmImg{
+
+    .textSecbtmImg {
         position: absolute;
         width: 100%;
         height: 100px;
@@ -1396,14 +1573,265 @@
         bottom: -70px;
 
     }
-    .textSecbtm img{
+
+    .textSecbtmImg img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     /*  */
     /* Services Css */
-    
+    .serSec {
+        background-color: #1A1A1A;
+        position: relative;
+        padding-bottom: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    .serBanner1 {
+        height: 70vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serBanner1::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/about2banner.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .serBanner1::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/1x/overlay.png");
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .serbanner1 h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3.5rem;
+    }
+
+    .serImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .serImgDiv {
+        width: 500px;
+        height: 600px;
+    }
+
+    .serImgDiv img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textDivSpanSer {
+        width: 590px;
+        min-height: 500px;
+        margin: auto;
+    }
+
+    .textDivSpanSer h3 {
+        color: #fff;
+        font-family: 'Poppins-Bold';
+    }
+
+    .textDivSpanSer p {
+        color: #666666;
+        font-family: 'Poppins-Light';
+        width: 90%;
+    }
+
+    .serSec button {
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+    }
+
+    .serSec button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    /*  */
+    /* Contact Us 2 Css */
+    .contactBanner1 {
+        height: 70vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactBanner1::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/about2banner.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .contactBanner1::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/1x/overlay.png");
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .contactbanner1 h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3.5rem;
+    }
+
+    .conSection2 {
+        background-color: #1A1A1A;
+        min-height: 800px;
+    }
+
+    .conSection2 .getInTouch {
+        width: 540px;
+        height: 650px;
+        left: 0px;
+        position: relative;
+
+    }
+
+    .conSection2 .getInTouchImg {
+        position: absolute;
+        width: 500px;
+        height: 650px;
+        left: 0px;
+        border: 8px solid #D5417F;
+    }
+
+    .conSection2 .getInTouchImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .conSection2 h3 {
+        color: #fff;
+    }
+
+    .socialLinksCont {
+        background-color: #1A1A1A;
+        padding-bottom: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    .socialLinksCont h3 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3rem;
+    }
+
+    .socialLinksCont i {
+        color: #fff;
+    }
+
+    /*  */
+    /* Gallery2 Css  */
+    #gallerSec2 {
+        padding-top: 4rem;
+        min-height: 900px;
+        background-color: #1A1A1A;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    .GalleryBanner1 {
+        height: 70vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .GalleryBanner1::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/about2banner.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .GalleryBanner1::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/1x/overlay.png");
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .gallerytbanner1 h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3.5rem;
+    }
+
     /*  */
 
 
@@ -1462,6 +1890,9 @@
     @media only screen and (min-width:2550px) {
         #main-content {
             display: none;
+        }
+        .getInTouchImg , .getInTouch{
+            width: 100%;
         }
     }
 
@@ -1553,6 +1984,30 @@
         #main-content {
             display: none;
         }
+        .getInTouchImg , .getInTouch{
+            width: 100%;
+        }
+        .aboutImg , .aboutImgDiv{
+            width: 100%;
+        }
+        .textDivSpan{
+            width: 100%;
+        }
+        .conSection2 .getInTouch{
+            width: 100%;
+        }
+        .conSection2 .getInTouchImg{
+            width: 100%;
+        }
+        .serImgDiv{
+            width: 100%;
+        }
+        .textDivSpanSer{
+            width: 100%;
+        }
+        .textDivSpanSer p{
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width:820px) {
@@ -1612,6 +2067,116 @@
             border-radius: 50px;
             font-size: 15px;
         }
+
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        .footer p {
+            color: #000;
+            font-family: 'Poppins-Bold';
+            text-align: center;
+        }
+        .joinMail h5 {
+            text-align: center;
+        }
+        .faceDiv {
+            margin-left: 0rem;
+            padding-top: 2rem;
+        }
+        .homeBanner {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+        .homeBanner .leftDiv  .bannerImgBoxAbout {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .homeBanner .leftDiv .bannerImgBoxAbout  img{
+            /* width: 100%; */
+            /* height: 100%; */
+            object-fit: cover;
+        }
+        .homeBanner .leftDiv{
+            width: 100%!important;
+        }
+        .homeBanner .rightDiv{
+            width: 100%;
+        }
+        .homeBanner .rightDiv .rightDivTextAbout {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .backBg{
+            display: unset;
+         }
+         .footerImgDiv {
+            width: 150px;
+            height: 100px;
+            margin: auto;
+        }
+        .textDivSpan {
+            width: 100%;
+            min-height: 500px;
+            margin: auto;
+        }
+        .textAboutSec p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            width: 100%;
+        }
+        .aboutImg{
+            width: 100%;
+        }
+        .aboutImgDiv{
+            width: 100%;
+        }
+        .center{
+            text-align: center;
+        }
+        .center1{
+             display: flex;
+             justify-content: center;
+        }
+        .smallBanner1{
+            width: 100%;
+            right: 0px;
+        }
+        .smallBanner{
+            width: 100%;
+            left: 0px;
+        }
+        .conSection2 .getInTouch{
+            width: 100%;
+        }
+        .conSection2 .getInTouchImg{
+            width: 100%;
+        }
+        .serImgDiv{
+            width: 100%;
+        }
+        .textDivSpanSer{
+            width: 100%;
+        }
+        .textDivSpanSer p{
+            width: 100%;
+        }
+        .serDivImg{
+            width: 100%;
+        }
+        .serDivImg{
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width:768px) {
@@ -1624,7 +2189,13 @@
         }
     }
 
-    @media only screen and (max-width:600px) {}
+    @media only screen and (max-width:600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
 
     @media only screen and (max-width:540px) {}
 
@@ -1676,6 +2247,147 @@
             font-size: 15px;
             font-family: 'Poppins-Light';
         }
+
+        
+        .footer p {
+            color: #000;
+            font-family: 'Poppins-Bold';
+            text-align: center;
+        }
+        .joinMail h5 {
+            text-align: center;
+        }
+        .faceDiv {
+            margin-left: 0rem;
+            padding-top: 2rem;
+        }
+        .homeBanner {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+        .homeBanner .leftDiv  .bannerImgBoxAbout {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .homeBanner .leftDiv .bannerImgBoxAbout  img{
+            /* width: 100%; */
+            /* height: 100%; */
+            object-fit: cover;
+        }
+        .homeBanner .leftDiv{
+            width: 100%!important;
+        }
+        .homeBanner .rightDiv{
+            width: 100%;
+        }
+        .homeBanner .rightDiv .rightDivTextAbout {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .backBg{
+            display: unset;
+         }
+         .footerImgDiv {
+            width: 150px;
+            height: 100px;
+            margin: auto;
+        }
+        .textDivSpan {
+            width: 100%;
+            min-height: 500px;
+            margin: auto;
+        }
+        .textAboutSec p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            width: 100%;
+        }
+        .aboutImg{
+            width: 100%;
+        }
+        .aboutImgDiv{
+            width: 100%;
+        }
+        .center{
+            text-align: center;
+        }
+        .getInTouchImg ,.getInTouch{
+            width: 100%;
+        }
+        .smallBanner{
+            right:0px;
+            width: 100%;
+        }
+        .smallBanner1{
+            left:0px;
+            width: 100%;
+        }
+        .smallBanner h3 , .smallBanner1 h3{
+            padding: 10px;
+            font-size: 2.5rem;
+        }
+        .conSection2 .getInTouch{
+            width: 100%;
+        }
+        .conSection2 .getInTouchImg{
+            width: 100%;
+        }
+        .serImgDiv{
+            width: 100%;
+        }
+        .textDivSpanSer{
+            width: 100%;
+        }
+        .rowRev{
+            display: flex;
+            flex-direction: column-reverse;;
+        }
+        .serDivImg {
+            width: 350px;
+            height: 300px;
+            /* background-color: #666666; */
+            margin: auto;
+        }
+        .aboutBgImg {
+            width: 263px;
+            height: 373px;
+            margin-top: 3.1rem;
+            position: absolute;
+            z-index: 0;
+        }
+        .outerDiv {
+            width: 150px;
+            height: 200px;
+            position: absolute;
+            left: 156px;
+            margin-top: 6rem;
+            top: 100px;
+        }
+        .outerDivImg {
+            width: 150px;
+            height: 150px;
+            border: 10px solid #ffff;
+        }
+        .aboutSec{
+            padding-bottom: 0px;
+        }
+        .servicesection {
+            background-color: #F1F1F1;
+            padding-bottom: 0rem;
+        }
+        .mainDivAbout{
+            width: 100%;
+        }
+        
     }
 
     @media only screen and (max-width:390px) {}
