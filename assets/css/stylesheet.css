@@ -612,9 +612,146 @@
         padding-bottom: 4rem;
 
     }
-
+    .gallerSec h3 {
+        color: #000;
+        font-family: "Arizonia-Regular";
+        text-align: center;
+        padding-top: 4rem;
+        font-size: 4rem;
+        padding-bottom: 4rem;
+      }
+      
+      .gallerSec h1 {
+        margin-top: 150px;
+        text-align: center;
+      }
+      .gallerSec section {
+        column-width: 400px;
+        column-gap: 5px;
+        padding: 5px;
+      }
+      
+      .gallerSec section img {
+        width: 100%;
+        cursor: pointer;
+      }
+      
+      .gallerSec .lightbox {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: none;
+        z-index: 2;
+        background: #7f8c8d;
+        perspective: 1000;
+      }
+      
+      .gallerSec .filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: blur(20px);
+        opacity: 0.5;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      .gallerSec .lightbox img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        max-height: 95vh;
+        max-width: calc(95vw - 100px);
+        transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
+        transform-style: preserve-3d;
+      }
+      
+      /*.lightbox:hover img{
+          transform: translate(-50%, -50%) rotateY(180deg);
+        }*/
+      
+      [class^="arrow"] {
+        height: 200px;
+        width: 50px;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      
+      [class^="arrow"]:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 15px;
+        height: 15px;
+      }
+      
+      .gallerSec .arrowr {
+        right: 0;
+      }
+      
+      .gallerSec .arrowr:after {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+      }
+      
+      .gallerSec .arrowl {
+        left: 0;
+      }
+      
+      .gallerSec .arrowl:after {
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+      }
+      
+      .gallerSec .close {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.4);
+        margin: 20px;
+        cursor: pointer;
+      }
+      
+      .gallerSec .close:after,
+      .gallerSec .close:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background: #e74c3c;
+      }
+      
+      .gallerSec .close:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      
+      .gallerSec .close:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      
+      .gallerSec .title {
+        font-size: 20px;
+        color: #000;
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     /*  */
     /*footer css */
+    #footer{
+        background-color:#fff;
+    }
     .footer {
         background-color: #FFDCEC;
     }
@@ -647,37 +784,45 @@
         margin-right: 11px;
         font-size: 16px;
     }
-    .footer-bottom span{
+
+    .footer-bottom span {
         color: #000;
         font-family: "Poppins-Light";
 
     }
-    .footer-bottom span:hover{
+
+    .footer-bottom span:hover {
         color: #D5417F;
         cursor: pointer;
     }
-    .faceDiv{
+
+    .faceDiv {
         margin-left: 6rem;
     }
-    .faceDiv i{
+
+    .faceDiv i {
         padding: 6px;
         font-size: 1.5rem;
         color: #000;
     }
-    .mainDivFooter{
+
+    .mainDivFooter {
         width: 100%;
     }
-    .footerFirst{
+
+    .footerFirst {
         width: 50%;
         /* background-color: #000708; */
         height: 100px;
     }
-    .footerSecond{
+
+    .footerSecond {
         width: 50%;
         /* background-color: green; */
         height: 100px;
 
     }
+
     .joinMail h5 {
         color: #000;
         font-family: 'Poppins-Bold';
@@ -721,11 +866,13 @@
         width: 95%;
         /* padding-top: 9rem; */
     }
+
     .rightDivTextAbout h2 {
         color: #000;
         font-family: 'Arizonia-Regular';
         font-size: 4rem;
     }
+
     .bannerImgBoxAbout {
         width: 100%;
         /* height: 100vh; */
@@ -733,51 +880,531 @@
         overflow: hidden;
         padding-bottom: 30px;
     }
+
     .bannerImgBoxAbout img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         /* padding-bottom: 30px; */
     }
-    .textAboutSec{
+
+    .textAboutSec {
         padding-top: 2rem;
         padding-bottom: 6rem;
     }
-    .textAboutSec span{
+
+    .textAboutSec span {
         color: #000;
         font-family: 'Poppins-Light';
         font-size: 1.5rem;
     }
+
     .textAboutSec p {
         color: #666666;
         font-family: 'Poppins-Light';
     }
-    .aboutImg{
+
+    .aboutImg {
         width: 100%;
         height: 100%;
         /* background-color: #506ED8; */
     }
-    .aboutImgDiv{
+
+    .aboutImgDiv {
         width: 620px;
         height: 500px;
         /* background-color: #000; */
     }
-    .textDivSpan{
+
+    .textDivSpan {
         width: 590px;
         min-height: 500px;
         margin: auto;
 
     }
-    .aboutImgDiv img{
+
+    .aboutImgDiv img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*  */
+    /*  Services css */
+    .smallBanner {
+        position: absolute;
+        background-color: #D5417F;
+        height: 90px;
+        width: 800px;
+        border: 3px solid #ffff;
+        right: 30px;
+        top: 10px;
+    }
+
+    .smallBanner1 {
+        position: absolute;
+        background-color: #D5417F;
+        height: 90px;
+        width: 800px;
+        border: 3px solid #ffff;
+        left: 7px;
+        top: 10px;
+        z-index: 1;
+
+    }
+
+    .textDivSpanp1 {
+        padding-top: 7rem;
+    }
+
+    .smallBanner1 h3 {
+        color: #ffff;
+        font-family: 'Arizonia-Regular';
+        padding: 10px 10px 10px 45px;
+        font-size: 3.5rem;
+
+    }
+
+    .smallBanner h3 {
+        color: #ffff;
+        font-family: 'Arizonia-Regular';
+        padding: 10px 10px 10px 45px;
+        font-size: 3.5rem;
+    }
+
+    .textDivSpanp {
+        padding-top: 5rem;
+    }
+
+    .textAboutSec button {
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+    }
+
+    .textAboutSec button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    /*  */
+    /* Contact Css */
+    .getInTouch {
+        width: 540px;
+        height: 650px;
+
+    }
+
+    .getInTouchImg {
+        position: absolute;
+        width: 500px;
+        height: 650px;
+        left: 0px;
+        border: 8px solid #D5417F;
+    }
+
+    .getInTouchImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .form h3 {
+        color: #000;
+        font-family: 'Arizonia-Regular';
+        padding-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .form-group input {
+        width: 100%;
+        border: 1px solid #808080;
+        padding: 10px;
+        font-family: 'Poppins-Light';
+        background: transparent;
+        outline: none;
+        padding: 15px;
+    }
+
+    .form-group input::placeholder {
+        padding-left: 20px;
+        font-family: 'Poppins-Light';
+    }
+
+    .form-group textarea {
+        padding: 12px 25px;
+        font-family: 'Poppins-Light';
+        background: transparent;
+        border: 1px solid #808080;
+        width: 100%;
+        outline: none;
+        min-height: 190px;
+        max-height: 190px;
+    }
+
+    .aboutDiv .form-group .button {
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 40px;
+        border: none;
+        margin-top: 1rem;
+    }
+
+    .aboutDiv .form-group .button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    /*  */
+    /* Social Links css*/
+    .socialLinks {
+        padding: 5rem;
+    }
+
+    .socialLinks h3 {
+        color: #000;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3rem;
+    }
+
+    .socialLinksDiv {
+        width: 50px;
+        height: 50px;
+        /* background: aqua; */
+    }
+
+    .socialLinksDiv i {
+        font-size: 2.5rem;
+    }
+
+    /*  */
+    /* Home2 css */
+    .homeBanner1 {
+        height: 80vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeBanner1::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/home2banner.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .homeBanner1::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/1x/overlay.png");
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .banner span {
+        color: #fff;
+        font-family: 'Poppins-Light';
+        text-align: center;
+    }
+
+    .banner h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3.5rem;
+    }
+
+    .banner p {
+        color: #fff;
+    }
+
+    .zIndex {
+        z-index: 1;
+        font-family: 'Poppins-Light';
+        font-size: 15px;
+    }
+
+    .photoSer button, .banner button {
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+        text-decoration: none;
+    }
+
+    .photoSer button a,.banner button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    /* .aboutSection {
+        background-color: #1A1A1A;
+    } */
+    .colDiv1 {
+        width: 60%;
+        background-color: #fff;
+        /* height: 100%; */
+    }
+
+    .colDiv2 {
+        width: 40%;
+        background-color: #1A1A1A;
+        /* height: 100%; */
+    }
+
+    .curveLine {
+        height: 685px;
+        width: 80px;
+        left: -2px;
+        top: 0px;
+        /* background: bisque; */
+    }
+
+    .curveLine img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .whiteAboutDiv {
+        width: 600px;
+        height: 550px;
+        background-color: #fff;
+    }
+
+    .line-after,
+    .line-before,
+    .line-center {
+        height: 166px;
+        text-align: center;
+    }
+
+    .line-after1 {
+        height: 120px;
+        background: #000;
+        width: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+
+    .aboutMain {
+        width: 550px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aboutImgDiv {
+        width: 500px;
+        height: 600px;
+        border: 8px solid #D5417F;
+    }
+
+    .aboutImgDivInner {
+        width: 485px;
+        height: 585px;
+    }
+
+    .aboutImgDivInner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .centerDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 680px;
+        width: 850px;
+        /* background-color: #506ED8; */
+    }
+
+    .centerDiv h5 {
+        color: #D5417F;
+        font-family: 'Arizonia-Regular';
+        font-size: 4rem;
+
+    }
+
+    .centerDiv span {
+        color: #000;
+        font-family: 'Poppins-Light';
+        font-size: 1.2rem;
+    }
+
+    .centerDiv p {
+        color: #666666;
+        font-family: 'Poppins-Light';
+        font-size: 15px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .centerDiv button {
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+        padding: 10px 30px;
+        border: none;
+    }
+
+    .centerDiv button a {
+        text-decoration: none;
+        background-color: #D5417F;
+        color: #fff;
+        font-family: 'Poppins-Light';
+    }
+
+    /*  */
+    /* Photo Services Css*/
+    .photoSer{
+        background-color: #1A1A1A;
+        padding-bottom: 5rem;
+    }
+    .photoSer h3{
+        color: #D5417F;
+        font-family: 'Arizonia-Regular';
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .photoDiv{
+        width: 400px;
+        height: 500px;
+        /* background-color: #506ED8; */
+        margin: auto;
+    }
+    .photoDivImg{
+        width: 400px;
+        height: 500px;
+    }
+    .photoDivImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .photoSer h4{
+        color: #fff;
+        font-family: 'Poppins-Bold';
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .photoSer p{
+        color: #E5E5E5;
+        font-family: 'Poppins-Light';
+        padding-top: 10px;
+        font-size: 12px;
+        padding: 15px;
+    }
+    /*  */
+    /* About2 css */
+    .aboutBanner1 {
+        height: 70vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutBanner1::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background-image: url("../images/1x/about2banner.png");
+        width: 100%;
+        height: 100%;
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .aboutBanner1::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/1x/overlay.png");
+        /* opacity: .8; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .banner1 h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Arizonia-Regular';
+        font-size: 3.5rem;
+    }
+    .textSec{
+        background-color: #1A1A1A;
+        padding-bottom: 8rem;
+    }
+    .textSec p{
+        color: #E5E5E5;
+        font-family: 'Poppins-Light';
+        font-size: 15px;
+    }
+    .textSecbtm{
+        position:absolute;
+        width: 100%;
+        height: 100px;
+    }
+    .textSecbtmImg{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        /* background-color: #506ED8; */
+        bottom: -70px;
+
+    }
+    .textSecbtm img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     /*  */
-    /*  Services css */
+    /* Services Css */
     
     /*  */
-
 
 
 
