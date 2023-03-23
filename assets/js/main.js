@@ -77,6 +77,19 @@ $(window).scroll(function () {
 
 	}
 })
+// scroll navbar
+$(window).scroll(function () {
+	var scroll = $(window).scrollTop();
+	if (scroll > 100) {
+		$("#back-Theme").css("background", "#000000");
+		$("#back-Theme").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px")
+	}
+	else {
+		$("#back-Theme").css("background", "none");
+		$("#back-Theme").css("box-shadow", "none")
+
+	}
+})
 // MOBILE SCREEN SIDE NAV
 var sidebarBox = document.querySelector('#box');
 var sidebarBtn = document.querySelector('#btn');
