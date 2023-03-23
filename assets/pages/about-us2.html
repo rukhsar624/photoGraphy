@@ -30,15 +30,60 @@
             <nav class="destop-nav-bar">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo">
-                        <a href=""> <img src="../../assets/images/SVG/logo.svg" alt="img"></a>
+                        <a href=""> <img src="./assets/images/SVG/logo.svg" alt="img"></a>
                     </div>
                     <div class="link">
                         <div class="d-flex justify-content-center">
-                            <a href="" class="header_links text-light">Home</a>
-                            <a href="" class="header_links text-light">About US</a>
-                            <a href="" class="header_links text-light">Photography Services</a>
-                            <a href="" class="header_links text-light">Gallery</a>
-                            <a href="" class="header_links text-light">Contact Us</a>
+                            <!-- <a href="" class="header_links active">Home</a> -->
+                            <div class="dropdown headers_links active">
+                                <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">Home1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">Home2</a></li>
+                                </ul>
+                              </div>
+                            <!-- <a href="" class="header_links">About US</a> -->
+                            <div class="dropdown headers_links">
+                                <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  About
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">About1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">About2</a></li>
+                                </ul>
+                              </div>
+                            <!-- <a href="" class="header_links">Photography Services</a> -->
+                            <div class="dropdown headers_links">
+                                <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Photography Services
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">Photography Services1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">Photography Services2</a></li>
+                                </ul>
+                              </div>
+                            <!-- <a href="" class="header_links">Gallery</a> -->
+                            <div class="dropdown headers_links">
+                                <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">Gallery1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">Gallery2</a></li>
+                                </ul>
+                              </div>
+                            <!-- <a href="" class="header_links">Contact Us</a> -->
+                            <div class="dropdown headers_links">
+                                <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contact Us
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href=".../../index.html">Contact Us1</a></li>
+                                    <li><a class="dropdown-item" href=".../../index1.html">Contact Us2</a></li>
+                                </ul>
+                              </div>
 
                         </div>
                     </div>
@@ -47,7 +92,7 @@
         </div>
         <!-- moblie navbar -->
         <div id="main-content">
-            <div id="title"><a href=""><img src="../../assets/images/SVG/logo.svg" alt=""></a></div>
+            <div id="title"><a href=""><img src="./assets/images/SVG/logo.svg" alt=""></a></div>
         </div>
         <div id="btn" class="">
             <div id="top"></div>
@@ -56,12 +101,77 @@
         </div>
         <div id="box" class="">
             <div id="items">
-                <div class="imglogo"><a href=""><img src="../../assets/images/SVG/logo.svg" alt=""></a></div>
-                <div class="item"><a href="" class="header_links">Home</a></div>
-                <div class="item"><a href="" class="header_links">About Us</a></div>
-                <div class="item"><a href="" class="header_links">Photography Services</a></div>
-                <div class="item"><a href="" class="header_links">Gallery</a></div>
-                <div class="item"><a href="" class="header_links">Contact Us</a></div>
+                <div class="imglogo"><a href=""><img src="./assets/images/SVG/logo.svg" alt=""></a></div>
+                <!-- <div class="item"><a href="" class="header_links active">Home</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Home<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">Home1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">Home2</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="item"><a href="" class="header_links">About Us</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse1" aria-expanded="false">
+                        About Us<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse1">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">About Us1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">About Us2</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="item"><a href="" class="header_links">Photography Services</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse2" aria-expanded="false">
+                        Photography Services<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse2">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">Photography Services1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">Photography Services2</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="item"><a href="" class="header_links">Gallery</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse3" aria-expanded="false">
+                        Gallery<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse3">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">Gallery1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">Gallery2</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="item"><a href="" class="header_links">Contact Us</a></div> -->
+                <div class="item for-cstm-collapse">
+                    <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse4" aria-expanded="false">
+                        Contact Us<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="dashboard-collapse4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a class="link-dark rounded" href=".../../index.html">Contact Us1</a></li>
+                            <li><a class="link-dark rounded" href=".../../index1.html">Contact Us2</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -84,7 +194,7 @@
     <!-- About txet Section Open -->
     <section class="aboutSection position-relative">
         <div class="curveLine position-absolute"><img src="../images/1x/curveLine.png" alt=""></div>
-        <div class="d-flex justify-content-center">
+        <div class="dFlexset">
 
             <div class="colDiv1">
                 <div class="centerDiv">
@@ -98,19 +208,12 @@
                         iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
                         feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
                         luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-                        iriure dolor in hendrerit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                        nonummy nibh euismod tincidunt
                         ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                         tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
                         iriure dolor in hendrerit </p>
                     <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
+                        tincidunt ut laoreet</p>
+            
                 </div>
             </div>
             <div class="colDiv2">
@@ -147,19 +250,19 @@
     </section>
     <!-- text section closed -->
     <!-- footer section open -->
-    <section class="footer" id="footer" id="footer">
+    <section class="footer" id="footer">
         <div class="container pt-5 pb-5">
             <div class="row d-flex justify-content-around">
                 <div class="col-lg-12 ">
                     <div class="footerImgDiv">
                         <div class="footerImg">
                             <a href=".../../index.html">
-                                <img src="../../assets/images/SVG/logo.svg" alt="">
+                                <img src="./assets/images/SVG/logo.svg" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-12 col-sm-12 center">
                     <p>Pages</p>
                     <ul class="p-0">
                         <li><a href="">Home</a></li>
@@ -169,7 +272,7 @@
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 ">
+                <div class="col-lg-3 col-md-12 col-sm-12 center">
                     <p>Our Services</p>
                     <ul class="p-0">
                         <li><a href="">Complete Wadding Shoot</a></li>
@@ -178,7 +281,7 @@
                         <li><a href="">Group Shoot</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 footerCont">
+                <div class="col-lg-3 col-md-12 col-sm-12 footerCont center">
                     <p>Contact Us</p>
                     <ul class="p-0">
                         <li class="footer-ancher"><i class="fa-solid fa-phone p"></i><a
@@ -189,7 +292,7 @@
                                 street NY city USA 123456</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 footerCont">
+                <div class="col-lg-3 col-md-12 col-sm-12 footerCont center">
                     <p>Working Hours</p>
                     <ul class="p-0">
                         <li class="footer-ancher">Monday-Sunday</li>
@@ -201,7 +304,7 @@
             <div class="row joinMail">
                 <h5>Join Our Mailing List</h5>
                 <div class="col-lg-6">
-                    <div class="d-flex">
+                    <div class="d-flex center1">
                         <div class="d-flex">
                             <div class="">
                                 <input type="text" placeholder="Email Address">
@@ -216,13 +319,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-lg-6 d-flex justify-content-center center">
                     <div class="faceDiv">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-twitter"></i>
                     </div>
-
+                    
                 </div>
             </div>
         </div>

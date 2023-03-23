@@ -38,6 +38,36 @@
     }
 
     /*  */
+    .btn {
+        text-decoration: none;
+        margin: 0 10px;
+        color: #000;
+        align-items: center;
+        font-family: 'Poppins-Light';
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .btn:hover{
+        color: #D5417F;
+    }
+    .dropdown,
+    .dropend,
+    .dropstart,
+    .dropup {
+        position: relative;
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .dropdown-item {
+        margin: 0 0px !important;
+    }
+    
     #main-content {
         position: relative;
     }
@@ -192,7 +222,15 @@
         border-bottom: 2px solid #000;
         color: #D5417F;
     }
-
+    .active,
+    .headers_links:hover {
+        border-bottom: 2px solid #fff;
+        color: #D5417F;
+    }
+    .headers_links:hover {
+        border-bottom: 2px solid #fff;
+        color: #D5417F;
+    }
     .image-change .active,
     .weds-img-div {
         border-bottom: 2px solid #FFF;
@@ -1332,6 +1370,11 @@
     /* .aboutSection {
         background-color: #1A1A1A;
     } */
+    .dFlexset{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
     .colDiv1 {
         width: 60%;
         background-color: #fff;
@@ -1863,6 +1906,15 @@
         #main-content {
             display: none;
         }
+        .photoGraImg {
+            width: 486px;
+            height: 480px;
+            transform: skew(26deg);
+            /* background: red; */
+            /* transform: translate(10px, 10px); */
+            position: relative;
+            right: -180px;
+        }
     }
 
     @media only screen and (min-width:1400px) {
@@ -1972,6 +2024,30 @@
             height: 300px;
             /* background-color: #666666; */
         }
+        .photoGraImg{
+            width: 371px;
+    height: 480px;
+    transform: skew(26deg);
+    /* background: red; */
+    /* transform: translate(10px, 10px); */
+    position: relative;
+    right: -180px;
+        }
+        .lineDiv {
+            position: absolute;
+            top: 0px;
+            width: 162px;
+            height: 100px;
+            right: 139PX;
+            z-index: 1;
+            transform: rotate(1deg);
+        }
+        .photoDivImg , .photoDiv{
+            width:100%;
+        }
+        .aboutMain , .centerDiv{
+            width:100%;
+        }
     }
 
     @media only screen and (max-width:1280px) {
@@ -2007,6 +2083,79 @@
         }
         .textDivSpanSer p{
             width: 100%;
+        }
+        .serDivImg{
+            width:100%;
+        }
+        .mainDivAbout{
+            width:100%;
+        }
+        .photoGrapher{
+            width:100%;
+        }
+        .photoGraImg{
+            width: 80%;
+    right: 0px;
+        }
+        .lineDivleft {
+            position: absolute;
+            top: 0px;
+            width: 182px;
+            height: 230px;
+            z-index: 1;
+            left: -130px;
+            transform: rotate(2deg);
+        }
+        .lineDivbtm {
+            position: absolute;
+            bottom: 50px;
+            width: 142px;
+            height: 160px;
+            left: -37px;
+            z-index: 1;
+            transform: rotate(2deg);
+        }
+        .lineDivBtm {
+            position: absolute;
+            bottom: 0px;
+            width: 162px;
+            height: 100px;
+            left: 70px;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .mainDivAbout{
+            width: 100%;
+        }
+        .dFlexset{
+            display:unset;
+        }
+        .colDiv1 , .colDiv2 , .aboutImgDivInner{
+            width:100%;
+        }
+        .line-after1 {
+            height: 40px;
+            background: #000;
+            width: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        .centerDiv span {
+            color: #000;
+            font-family: 'Poppins-Light';
+            font-size: 1.2rem;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        .centerDiv p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
         }
     }
 
@@ -2139,7 +2288,7 @@
             width: 100%;
         }
         .aboutImgDiv{
-            width: 100%;
+            width: 90%;
         }
         .center{
             text-align: center;
@@ -2177,6 +2326,43 @@
         .serDivImg{
             width: 100%;
         }
+        .photoGraImg{
+            width: 90%;
+    transform: skew(29deg);
+        }
+        .mainDivAbout{
+            width: 100%;
+        }
+        .dFlexset{
+            display:unset;
+        }
+        .colDiv1 , .colDiv2 , .aboutImgDivInner{
+            width:100%;
+        }
+        .line-after1 {
+            height: 40px;
+            background: #000;
+            width: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        .centerDiv span {
+            color: #000;
+            font-family: 'Poppins-Light';
+            font-size: 1.2rem;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        .centerDiv p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
     }
 
     @media only screen and (max-width:768px) {
@@ -2186,6 +2372,57 @@
 
         #btn {
             display: block;
+        }
+        .photoGraImg {
+            width: 80%;
+            transform: skew(17deg);
+            margin: auto;
+        }
+        .lineDiv {
+            position: absolute;
+            top: 0px;
+            width: 162px;
+            height: 100px;
+            right: 89PX;
+            z-index: 1;
+            transform: rotate(3deg);
+            display:none
+        }
+        .lineDivleft , .lineDivbtm , .lineDivBtm{
+            display:none;
+        }
+        .mainDivAbout{
+            width: 100%;
+        }
+        .dFlexset{
+            display:unset;
+        }
+        .colDiv1 , .colDiv2 , .aboutImgDivInner{
+            width:100%;
+        }
+        .line-after1 {
+            height: 40px;
+            background: #000;
+            width: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        .centerDiv span {
+            color: #000;
+            font-family: 'Poppins-Light';
+            font-size: 1.2rem;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        .centerDiv p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
         }
     }
 
@@ -2200,6 +2437,37 @@
     @media only screen and (max-width:540px) {}
 
     @media only screen and (max-width:414px) {
+        .photoGrapher{
+            width:100%;
+        }
+        .photoGraImg{
+            width: 100%;
+    transform: skew(0deg);
+    right: 0px;
+        }
+        .pinDiv{
+            display:none;
+        }
+        .lineDivBtm {
+            position: absolute;
+            bottom: 0px;
+            width: 162px;
+            height: 100px;
+            left: 0px;
+            z-index: 1;
+            transform: rotate(180deg);
+            display:none;
+        }
+        .lineDivleft , .lineDivbtm , .lineDiv{
+            display:none;
+        }
+        .item .btn-toggle {
+            background-color: transparent !important;
+            color: #000 !important;
+            font-family: 'Poppins-Light'!important;
+            font-size: 15px !important;
+            font-weight: bold!important;
+        }
         .destop-nav-bar {
             display: none;
         }
@@ -2243,7 +2511,6 @@
         #items a {
             text-decoration: none;
             color: #000;
-            font-family: 'Retroica-Regular';
             font-size: 15px;
             font-family: 'Poppins-Light';
         }
@@ -2386,6 +2653,36 @@
         }
         .mainDivAbout{
             width: 100%;
+        }
+        .dFlexset{
+            display:unset;
+        }
+        .colDiv1 , .colDiv2 , .aboutImgDivInner{
+            width:100%;
+        }
+        .line-after1 {
+            height: 40px;
+            background: #000;
+            width: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        .centerDiv span {
+            color: #000;
+            font-family: 'Poppins-Light';
+            font-size: 1.2rem;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        .centerDiv p {
+            color: #666666;
+            font-family: 'Poppins-Light';
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
         }
         
     }
