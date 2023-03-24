@@ -698,51 +698,40 @@
     /* Gallery css */
     .gallerSec h3 {
         color: #000;
-        font-family: 'Arizonia-Regular';
-        text-align: center;
-        padding-top: 4rem;
-        font-size: 4rem;
-        padding-bottom: 4rem;
-
-    }
-
-    .gallerSec h3 {
-        color: #000;
         font-family: "Arizonia-Regular";
         text-align: center;
         padding-top: 4rem;
         font-size: 4rem;
         padding-bottom: 4rem;
-    }
-
-    .gallerSec h1 {
+      }
+      
+      .gallerSec h1 {
         margin-top: 150px;
         text-align: center;
-    }
-
-    .gallerSec section {
+      }
+      .gallerSec section {
         column-width: 400px;
         column-gap: 5px;
         padding: 5px;
-    }
-
-    .gallerSec section img {
+      }
+      
+      .gallerSec section img {
         width: 100%;
         cursor: pointer;
-    }
-
-    .gallerSec .lightbox {
+      }
+      
+      .gallerSec .lightbox {
         position: fixed;
-        width: 100%;
+        width: 90%;
         height: 100%;
         top: 0;
         display: none;
         z-index: 2;
         background: #7f8c8d;
         perspective: 1000;
-    }
-
-    .gallerSec .filter {
+      }
+      
+      .gallerSec .filter {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -750,9 +739,9 @@
         opacity: 0.5;
         background-position: center;
         background-size: cover;
-    }
-
-    .gallerSec .lightbox img {
+      }
+      
+      .gallerSec .lightbox img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -761,13 +750,13 @@
         max-width: calc(95vw - 100px);
         transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
         transform-style: preserve-3d;
-    }
-
-    /*.lightbox:hover img{
+      }
+      
+      /*.lightbox:hover img{
           transform: translate(-50%, -50%) rotateY(180deg);
         }*/
-
-    [class^="arrow"] {
+      
+      [class^="arrow"] {
         height: 200px;
         width: 50px;
         background: rgba(0, 0, 0, 0.4);
@@ -775,9 +764,9 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
-    }
-
-    [class^="arrow"]:after {
+      }
+      
+      [class^="arrow"]:after {
         content: "";
         position: absolute;
         top: 50%;
@@ -785,27 +774,27 @@
         transform: translate(-50%, -50%) rotate(-45deg);
         width: 15px;
         height: 15px;
-    }
-
-    .gallerSec .arrowr {
+      }
+      
+      .gallerSec .arrowr {
         right: 0;
-    }
-
-    .gallerSec .arrowr:after {
+      }
+      
+      .gallerSec .arrowr:after {
         border-right: 1px solid white;
         border-bottom: 1px solid white;
-    }
-
-    .gallerSec .arrowl {
+      }
+      
+      .gallerSec .arrowl {
         left: 0;
-    }
-
-    .gallerSec .arrowl:after {
+      }
+      
+      .gallerSec .arrowl:after {
         border-left: 1px solid white;
         border-top: 1px solid white;
-    }
-
-    .gallerSec .close {
+      }
+      
+      .gallerSec .close {
         position: absolute;
         right: 0;
         width: 50px;
@@ -813,10 +802,10 @@
         background: rgba(0, 0, 0, 0.4);
         margin: 20px;
         cursor: pointer;
-    }
-
-    .gallerSec .close:after,
-    .gallerSec .close:before {
+      }
+      
+      .gallerSec .close:after,
+      .gallerSec .close:before {
         content: "";
         position: absolute;
         top: 50%;
@@ -824,24 +813,24 @@
         width: 1px;
         height: 100%;
         background: #e74c3c;
-    }
-
-    .gallerSec .close:after {
+      }
+      
+      .gallerSec .close:after {
         transform: translate(-50%, -50%) rotate(-45deg);
-    }
-
-    .gallerSec .close:before {
+      }
+      
+      .gallerSec .close:before {
         transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    .gallerSec .title {
+      }
+      
+      .gallerSec .title {
         font-size: 20px;
         color: #000;
         z-index: 1000;
         position: absolute;
         top: 0;
         left: 0;
-    }
+      }
 
     /*  */
     /*footer css */
