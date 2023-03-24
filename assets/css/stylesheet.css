@@ -224,15 +224,18 @@
         border-bottom: 2px solid #000;
         color: #D5417F;
     }
-    .header_links1 .btn{
+
+    .header_links1 .btn {
         color: #D5417F;
 
     }
+
     .active,
     .header_links1 .btn:hover {
         border-bottom: 2px solid #D5417F;
         color: #fff;
     }
+
     /* .active.header_links1:hover{
         color: #FFF;
         border-bottom: 1px solid #fff;
@@ -331,10 +334,12 @@
         height: 100%;
         padding-bottom: 5rem;
     }
-    .homeBanner button a{
+
+    .homeBanner button a {
         text-decoration: none;
         color: #fff;
     }
+
     .homeBanner button {
         background-color: #D5417F;
         color: #fff;
@@ -343,11 +348,13 @@
         border: none;
         text-decoration: none;
     }
-    .homeBanner button:hover{
+
+    .homeBanner button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .leftDiv {
         width: 50%;
     }
@@ -417,11 +424,13 @@
         padding: 10px 30px;
         border: none;
     }
-    .aboutDiv button:hover{
+
+    .aboutDiv button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .aboutDiv button a {
         text-decoration: none;
         background-color: #D5417F;
@@ -545,11 +554,13 @@
         padding: 10px 30px;
         border: none;
     }
-    .servicesection button:hover{
+
+    .servicesection button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .servicesection button a {
         text-decoration: none;
         background-color: #D5417F;
@@ -589,11 +600,13 @@
         color: #fff;
         font-family: 'Poppins-Light';
     }
-    .sameBtn:hover{
+
+    .sameBtn:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .pinDiv {
         width: 100px;
         height: 210px;
@@ -863,9 +876,11 @@
         padding-left: 0;
         font-family: "Poppins-Light";
     }
-    .footer ul li a:hover{
+
+    .footer ul li a:hover {
         color: #D5417F;
     }
+
     .footerCont ul li i {
         margin-right: 11px;
         font-size: 16px;
@@ -937,11 +952,13 @@
         border: none;
         margin-left: 1rem;
     }
-    .joinMail button:hover{
+
+    .joinMail button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .joinMail button a {
         text-decoration: none;
         background-color: #D5417F;
@@ -1074,17 +1091,20 @@
         padding: 10px 30px;
         border: none;
     }
+
     .textAboutSec button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
-    .serSec button:hover{
+
+    .serSec button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
 
     }
+
     .textAboutSec button a {
         text-decoration: none;
         background-color: #D5417F;
@@ -1262,11 +1282,13 @@
         border: none;
         text-decoration: none;
     }
-    .photoSer button:hover{
+
+    .photoSer button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     /* .photoSer button,
     .banner button:hover{
         background-color: #fff;
@@ -1320,8 +1342,132 @@
         z-index: 1;
     }
 
+    .circleDiv {
+        width: 700px;
+        height: 700px;
+        /* background-color: #000; */
+        position: relative;
+        top: 0px;
+        left: -61px;
+    }
+
+    .circleDiv img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .circleDiv1 {
+        width: 650px;
+        height: 400px;
+        /* background-color: #000; */
+        position: relative;
+        top: 240px;
+        left: -1px;
+
+    }
+
+    .divOne {
+        width: 450px;
+        height: 350px;
+        /* background-color: #D5417F; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .divOneInner {
+        width: 450px;
+        height: 350px;
+        /* background-color: blue; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* transform: skew(359deg);
+        border-top-right-radius: -10%;
+        border-top-left-radius: 3090px;
+        border-bottom-right-radius: -10%; */
+    }
+
+    .divOneInner img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        /* transform: skew(-20deg);
+        border-top-right-radius: -10%;
+        border-top-left-radius: 3090px;
+        border-bottom-right-radius: -10%; */
+    }
+
+    .divTwo {
+        width: 360px;
+        height: 412px;
+        /* background-color: green; */
+        position: absolute;
+        top: 35px;
+        right: -16px;
+
+    }
+
+    .divtwoInner {
+        width: 240px;
+        height: 310px;
+        /* transform: rotate(1deg); */
+        /* background-color: purple;*/
+
+    }
+
+    .divtwoInner img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        transform: rotate(5deg);
+    }
+
+    .divThree {
+        width: 360px;
+        height: 350px;
+        /* background-color: green; */
+        position: absolute;
+        bottom: -10px;
+        left: -110px;
+
+    }
+
+    .divThreeInner {
+        width: 300px;
+        height: 300px;
+        /* background-color: #000; */
+        margin-top: 2rem;
+        /* transform: rotate(1deg); */
+        /* background-color: purple;*/
+
+    }
+
+    .divFour {
+        width: 400px;
+        height: 300px;
+        /* background-color: blue; */
+        position: absolute;
+        bottom: 30px;
+        right: 120px;
+
+    }
+
+    .divFourInner {
+        width: 400px;
+        height: 300px;
+    }
+
+    .divFourInner img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        /* transform: rotate(5deg); */
+    }
+
     .pinkCurveCap {
-        height: 450px;
+        height: 680px;
         width: 60%;
         /* background-color: #000; */
         position: absolute;
@@ -1331,14 +1477,14 @@
     }
 
     .pinkCurveCapdivimg {
-        height: 450px;
+        height: 680px;
         width: 800px;
     }
 
     .pinkCurveCapdivimg img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .galleryHome2 {
@@ -1358,11 +1504,11 @@
 
     .capturingSec h4 {
         color: #fff;
-        padding-top: 3rem;
+        padding-top: 8rem;
         padding-bottom: 2rem;
         text-align: center;
         font-family: 'Arizonia-Regular';
-        font-size: 3rem;
+        font-size: 2.5rem;
 
     }
 
@@ -1379,7 +1525,7 @@
         font-family: 'Poppins-Light';
         padding: 10px 30px;
         border: none;
-        margin-left: 5rem;
+        margin-left: 10rem;
         margin-top: 1rem;
     }
 
@@ -1552,11 +1698,13 @@
         padding: 10px 30px;
         border: none;
     }
-    .centerDiv button:hover{
+
+    .centerDiv button:hover {
         background-color: #fff;
         color: #000;
         box-shadow: #0842983d 2px 21px 43px 17px;
     }
+
     .centerDiv button a {
         text-decoration: none;
         background-color: #D5417F;
@@ -1985,6 +2133,28 @@
             position: relative;
             right: -180px;
         }
+
+        .capturingSec {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pinkCurveCapdivimg{
+            width: 100%;
+            height: 100%;
+
+        }
+        .pinkCurveCapdivimg{
+            width: 100%;
+            height: 100%;
+
+        }
+        .pinkCurveCap{
+            width: 100%;
+            height: 100%;
+        }
     }
 
     @media only screen and (min-width:1400px) {
@@ -1995,17 +2165,92 @@
         #main-content {
             display: none;
         }
-    }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+        }
+        .pinkCurveCap{
+            width: 100%;
+            height: 100%;
+        }
+        .pinkCurveCapdivimg {
+            width: 100%;
+            height: 100%;
+        }
+        }
+    
 
     @media only screen and (min-width:1440px) {
         #main-content {
             display: none;
+        }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            height: 100%;
+            top: 0px;
         }
     }
 
     @media only screen and (min-width:1920px) {
         #main-content {
             display: none;
+        }
+
+        .circleDiv1 {
+            width: 650px;
+            height: 400px;
+            /* background-color: #000; */
+            position: relative;
+            top: 240px;
+            left: 0px;
+        }
+
+        /* .pinkCurveCap {
+            height: 450px;
+            width: 60%;
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+            left: 280px;
+        } */
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+        }
+
+        .pinkCurveCap {
+            width: 100%;
+            height: 100%;
+        }
+        .capturingSec {
+            height: 100vh;
+        }
+        .pinkCurveCapdivimg{
+            width: 100%;
+            height: 100%;
+
+        }
+        .capturingSec button {
+            margin-left: 19rem;
         }
     }
 
@@ -2018,6 +2263,32 @@
         .getInTouch {
             width: 100%;
         }
+
+        .circleDiv1 {
+            width: 650px;
+            height: 400px;
+            /* background-color: #000; */
+            position: relative;
+            top: 240px;
+            left: 0px;
+        }
+
+        /* .pinkCurveCap {
+            height: 450px;
+            width: 60%;
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+            left: 560px;
+        }
+
+        .capturingSec {
+            height: 50vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
     }
 
     /* ===================  Max Media Queries ======================== */
@@ -2125,6 +2396,25 @@
         .aboutMain,
         .centerDiv {
             width: 100%;
+        }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+        }
+        .pinkCurveCap{
+            width: 100%;
+            height: 100%;
+        }
+        .pinkCurveCapdivimg {
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -2502,6 +2792,38 @@
             text-align: center;
             margin: auto;
         }
+
+        .pinkCurveCap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pinkCurveCapdivimg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 12px;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+        }
+
+        .capturingSec h4 {
+            font-size: 2rem;
+        }
+
+        .capturingSec button {
+            margin-left: 5rem;
+        }
     }
 
     @media only screen and (max-width:768px) {
@@ -2575,6 +2897,38 @@
             width: 60%;
             text-align: center;
             margin: auto;
+        }
+
+        .pinkCurveCap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pinkCurveCapdivimg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 12px;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+        }
+
+        .capturingSec h4 {
+            font-size: 2rem;
+        }
+
+        .capturingSec button {
+            margin-left: 5rem;
         }
     }
 
@@ -2885,6 +3239,39 @@
             text-align: center;
             margin: auto;
         }
+
+        .pinkCurveCap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pinkCurveCapdivimg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .circleDiv {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 12px;
+        }
+
+        .circleDiv1 {
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+        }
+
+        .capturingSec h4 {
+            font-size: 2rem;
+        }
+
+        .capturingSec button {
+            margin-left: 5rem;
+        }
+
 
     }
 
