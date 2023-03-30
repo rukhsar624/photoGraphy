@@ -1,18 +1,21 @@
 $(window).on('load',function() {
 
-	$(".gallerSec section img").click(function() {
+	$(".gallerSec .row img").click(function() {
 	  $(".gallerSec .lightbox").fadeIn(300);
 	  $(".gallerSec .lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' />");
 	  $(".gallerSec .filter").css("background-image", "url(" + $(this).attr("src") + ")");
 	  /*$(".title").append("<h1>" + $(this).attr("alt") + "</h1>");*/
 	  $("html").css("overflow", "hidden");
 	  if ($(this).is(":last-child")) {
+		console.log('here')
 		$(".gallerSec .arrowr").css("display", "none");
 		$(".gallerSec .arrowl").css("display", "block");
 	  } else if ($(this).is(":first-child")) {
+
 		$(".gallerSec .arrowr").css("display", "block");
 		$(".gallerSec .arrowl").css("display", "none");
 	  } else {
+
 		$(".gallerSec .arrowr").css("display", "block");
 		$(".gallerSec .arrowl").css("display", "block");
 	  }
@@ -35,30 +38,36 @@ $(window).on('load',function() {
   
 	$(".gallerSec .arrowr").click(function() {
 	  var imgSrc = $(".gallerSec .lightbox img").attr("src");
-	  var search = $(".gallerSec section").find("img[src$='" + imgSrc + "']");
+	  var search = $(".gallerSec").find("img[src$='" + imgSrc + "']");
 	  var newImage = search.next().attr("src");
 	  /*$(".lightbox img").attr("src", search.next());*/
 	  $(".gallerSec .lightbox img").attr("src", newImage);
 	  $(".gallerSec .filter").css("background-image", "url(" + newImage + ")");
   
 	  if (!search.next().is(":last-child")) {
+
 		$(".gallerSec .arrowl").css("display", "block");
 	  } else {
+
 		$(".gallerSec .arrowr").css("display", "none");
 	  }
 	});
   
 	$(".gallerSec .arrowl").click(function() {
 	  var imgSrc = $(".gallerSec .lightbox img").attr("src");
-	  var search = $(".gallerSec section").find("img[src$='" + imgSrc + "']");
+	  var search = $(".gallerSec").find("img[src$='" + imgSrc + "']");
 	  var newImage = search.prev().attr("src");
 	  /*$(".lightbox img").attr("src", search.next());*/
 	  $(".gallerSec .lightbox img").attr("src", newImage);
 	  $(".gallerSec .filter").css("background-image", "url(" + newImage + ")");
   
 	  if (!search.prev().is(":first-child")) {
+		console.log('here7')
+
 		$(".gallerSec .arrowr").css("display", "block");
 	  } else {
+		console.log('here8')
+
 		$(".gallerSec .arrowl").css("display", "none");
 	  }
 	});

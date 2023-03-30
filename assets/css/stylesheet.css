@@ -694,7 +694,8 @@
     .photoGraImg img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
+        /* object-fit: cover; */
         /* transform: skew(20deg); */
     }
 
@@ -716,20 +717,22 @@
 
     .gallerSec section {
         column-width: 400px;
-        column-gap: 5px;
+        column-gap: 15px;
         padding: 5px;
     }
 
     .gallerSec section img {
-        width: 98%;
+        width: 100%;
         cursor: pointer;
+        object-fit: fill;
     }
 
     .gallerSec .lightbox {
         position: fixed;
-        width: 90%;
+        width: 100%;
         height: 100%;
         top: 0;
+        left: 0;
         display: none;
         z-index: 2;
         background: #7f8c8d;
@@ -1679,6 +1682,7 @@
     .aboutImgDivInner {
         width: 485px;
         height: 585px;
+        border: 10px solid #D5417F;
     }
 
     .aboutImgDivInner img {
@@ -1771,6 +1775,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
+        /* object-position: 77% 100%; */
     }
 
     .photoSer h4 {
@@ -1889,7 +1895,7 @@
         content: "";
         top: 0px;
         left: 0px;
-        background-image: url("../images/1x/about2banner.png");
+        background-image: url("../images/1x/serBanner12.png");
         width: 100%;
         height: 100%;
         /* opacity: .8; */
@@ -2087,7 +2093,7 @@
         content: "";
         top: 0px;
         left: 0px;
-        background-image: url("../images/1x/about2banner.png");
+        background-image: url("../images/1x/gallerBn1.png");
         width: 100%;
         height: 100%;
         /* opacity: .8; */
@@ -2148,12 +2154,14 @@
 
     @media only screen and (min-width:1600px) {
         .gallerSec .lightbox {
-            width: 80%;
-            margin: auto;
+            width: 100%;
+           
         }
+
         .capturingSec button {
             margin-left: 13rem;
         }
+
         #main-content {
             display: none;
         }
@@ -2175,6 +2183,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .pinkCurveCap {
             width: 70%;
             height: 80%;
@@ -2307,9 +2316,10 @@
 
     @media only screen and (min-width:1920px) {
         .gallerSec .lightbox {
-            width: 67%;
-            margin: auto;
+            width: 100%;
+           
         }
+
         #main-content {
             display: none;
         }
@@ -2364,12 +2374,14 @@
 
     @media only screen and (min-width:2550px) {
         .gallerSec .lightbox {
-            width: 51%;
-            margin: auto;
+            width: 100%;
+           
         }
+
         .capturingSec button {
             margin-left: 9rem;
         }
+
         #main-content {
             display: none;
         }
@@ -2408,21 +2420,28 @@
 
     /* ===================  Max Media Queries ======================== */
     @media only screen and (max-width:1366px) {
-        .gallerSec .lightbox {
-            width: 80%;
-            margin: auto;
+        .homeBanner {
+            height: 100vh;
         }
+        .gallerSec .lightbox {
+            width: 100%;
+           
+        }
+
         .column {
             -ms-flex: 50%;
             flex: 50%;
             max-width: 50%;
         }
+
         .textDivSpanp1 {
             padding-top: 8rem;
         }
+
         .smallBanner1 {
             top: 30px;
         }
+
         #main-content {
             display: none;
         }
@@ -2433,6 +2452,7 @@
 
         .leftDiv {
             width: 50%;
+            height: 87vh;
         }
 
         .rightDiv {
@@ -2442,7 +2462,7 @@
         .bannerImgBox {
             width: 100%;
             /* height: 100vh; */
-            height: 60vh;
+            height: 87vh;
             overflow: hidden;
         }
 
@@ -2536,13 +2556,15 @@
         .circleDiv1 {
             width: 100%;
             height: 100%;
-            top: 0px;
+            top: 180px;
+            /* top: 0px; */
         }
 
         .pinkCurveCap {
 
             width: 70%;
-            height: 80%;
+            /* height: 80%; */
+            height: 60%;
 
         }
 
@@ -2555,6 +2577,10 @@
     @media only screen and (max-width:1280px) {
         #main-content {
             display: none;
+        }
+        .gallerSec .lightbox {
+            width: 100%;
+           
         }
     }
 
@@ -3089,6 +3115,11 @@
     @media only screen and (max-width:540px) {}
 
     @media only screen and (max-width:414px) {
+        .fa-solid, .fas {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            padding-left: 2px;
+        }
         .header {
             height: 75px;
         }
