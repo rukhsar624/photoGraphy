@@ -3115,6 +3115,17 @@
     @media only screen and (max-width:540px) {}
 
     @media only screen and (max-width:414px) {
+        .homeBanner .rightDiv .rightDivText {
+            position: absolute;
+            top: 150px;
+            transform: translate(-50%, -50%);
+            left: 0%;
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
         .fa-solid, .fas {
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
